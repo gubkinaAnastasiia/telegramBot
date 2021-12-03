@@ -13,11 +13,10 @@ import org.springframework.context.support.ReloadableResourceBundleMessageSource
 @Setter
 @Getter
 @Configuration
-@ConfigurationProperties(prefix = "telegrambot")
 public class BotConfig {
-    private String webHookPath;
-    private String botUserName;
-    private String botToken;
+    private String webHookPath="https://telegram-bot-ps.herokuapp.com";
+    private String botUserName="@testDepressionTestBot";
+    private String botToken="2109324716:AAEwCc1-hPo0jpIU2ksXAq0A5BUNaTnZFOY";
 
     @Bean
     public Bot myBot(TelegramFacade telegramFacade) {
