@@ -10,7 +10,7 @@ import java.util.List;
 
 public class TestBeck implements Test{
 
-    int MAX_QUEST = 2;
+    final int MAX_QUEST = 21;
     int current_quest = 0;
     int result = 0;
 
